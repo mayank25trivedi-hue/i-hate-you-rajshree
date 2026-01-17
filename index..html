@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>I Hate You – Rajshree</title>
+
+<style>
+/* Cinematic Background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a1a2e, #000000);
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Soft moving glow */
+body::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,105,180,0.12), transparent 60%);
+  animation: glowMove 18s infinite alternate;
+}
+
+@keyframes glowMove {
+  from { transform: translate(-10%, -10%); }
+  to { transform: translate(10%, 10%); }
+}
+
+.container {
+  position: relative;
+  max-width: 650px;
+  padding: 25px;
+  z-index: 2;
+}
+
+/* Typewriter text */
+#text {
+  font-size: 19px;
+  line-height: 1.8;
+  white-space: pre-line;
+  text-shadow: 0 0 8px rgba(255, 182, 193, 0.4);
+}
+
+/* Cursor */
+.cursor {
+  display: inline-block<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>I Hate You – Rajshree</title>
+
+<style>
+/* Cinematic Background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a1a2e, #000000);
+  overflow: hidden;
+  font-family: "Courier New", monospace;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Soft moving glow */
+body::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,105,180,0.12), transparent 60%);
+  animation: glowMove 18s infinite alternate;
+}
+
+@keyframes glowMove {
+  from { transform: translate(-10%, -10%); }
+  to { transform: translate(10%, 10%); }
+}
+
+.container {
+  position: relative;
+  max-width: 650px;
+  padding: 25px;
+  z-index: 2;
+}
+
+/* Typewriter text */
+#text {
+  font-size: 19px;
+  line-height: 1.8;
+  white-space: pre-line;
+  text-shadow: 0 0 8px rgba(255, 182, 193, 0.4);
+}
+
+/* Cursor */
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background: white;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  color: rgba(255,105,180,0.35);
+  font-size: 18px;
+  animation: floatUp 10s explains infinite;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(100vh) scale(0.8);
+    opacity: 0;
+  }
+  20% { opacity: 1; }
+  to {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <span id="text"></span><span class="cursor"></span>
+</div>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="aud.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+/* TYPEWRITER TEXT */
+const message = `I hate you...
+
+Because you came into my life
+and made everything feel special.
+
+I hate you,
+because now every song,
+every night,
+every silence reminds me of you.
+
+I may not be perfect,
+but my feelings are real.
+
+I don't want anyone else,
+I just want you.
+
+Maybe not today,
+maybe not tomorrow...
+
+But one day,
+I want to call you mine ❤️
+
+Happy Birthday Rajshree 🎂❤️
+— Mayank`;
+
+let i = 0;
+const speed = 55;
+
+function typeWriter() {
+  if (i < message.length) {
+    document.getElementById("text").innerHTML += message.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();
+
+/* Floating hearts generator */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (8 + Math.random() * 6) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 12000);
+}
+
+setInterval(createHeart, 1200);
+</script>
+
+</body>
+</html>
+
+  width: 8px;
+  height: 20px;
+  background: white;
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  color: rgba(255,105,180,0.35);
+  font-size: 18px;
+  animation: floatUp 10s explains infinite;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(100vh) scale(0.8);
+    opacity: 0;
+  }
+  20% { opacity: 1; }
+  to {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <span id="text"></span><span class="cursor"></span>
+</div>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="aud.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+/* TYPEWRITER TEXT */
+const message = `I hate you...
+
+Because you came into my life
+and made everything feel special.
+
+I hate you,
+because now every song,
+every night,
+every silence reminds me of you.
+
+I may not be perfect,
+but my feelings are real.
+
+I don't want anyone else,
+I just want you.
+
+Maybe not today,
+maybe not tomorrow...
+
+But one day,
+I want to call you mine ❤️
+
+Happy Birthday Rajshree 🎂❤️
+— Mayank`;
+
+let i = 0;
+const speed = 55;
+
+function typeWriter() {
+  if (i < message.length) {
+    document.getElementById("text").innerHTML += message.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();
+
+/* Floating hearts generator */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (8 + Math.random() * 6) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 12000);
+}
+
+setInterval(createHeart, 1200);
+</script>
+
+</body>
+</html>
